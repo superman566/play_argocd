@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata: 
+  name: tony
+  namespace: argocd
+spec: 
+  destination: 
+    namespace: tony
+    server: "https://kubernetes.default.svc"
+  project: default
+  source: 
+    path: .
+    repoURL: "https://github.com/superman566/play_argocd.git"
+    targetRevision: main
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
