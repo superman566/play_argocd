@@ -9,7 +9,7 @@ spec:
     server: "https://kubernetes.default.svc"
   project: default
   source: 
-    path: .
+    path: application-sets
     repoURL: "https://github.com/superman566/play_argocd.git"
     targetRevision: main
   syncPolicy:
