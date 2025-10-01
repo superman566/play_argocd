@@ -13,5 +13,6 @@ spec:
     repoURL: "https://github.com/superman566/play_argocd.git"
     targetRevision: main
   syncPolicy:
+    automated: {}
     syncOptions:
       - CreateNamespace=true
