@@ -1,11 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata: 
-  name: tony
+  name: maxey
   namespace: argocd
 spec: 
   destination: 
-    namespace: tony
+    namespace: maxey
     server: "https://kubernetes.default.svc"
   project: default
   source: 
@@ -17,6 +17,5 @@ spec:
       automated:
       prune: true
       selfHeal: true
-      enabled: true
     syncOptions:
       - CreateNamespace=true
